@@ -1,7 +1,16 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0  # Use the latest stable version
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
+
+  - repo: local
+    hooks:
+      - id: pylint
+        name: Pylint
+        entry: python -m pylint
+        language: system
+        types: [python]
+        require_serial: true

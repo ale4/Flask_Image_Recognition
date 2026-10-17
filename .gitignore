@@ -1,0 +1,9 @@
+
+# Local Python environments
+.venv/
+.venv311/
+
+# Generated Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
