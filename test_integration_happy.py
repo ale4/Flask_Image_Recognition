@@ -1,7 +1,8 @@
-# test_integration_happy.py
+"""Test the image-upload and prediction workflow."""
+# pylint: disable=duplicate-code
 
 from io import BytesIO
-import pytest
+
 
 def test_successful_prediction(client):
     """Test the successful image upload and prediction."""
