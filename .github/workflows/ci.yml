@@ -31,3 +31,5 @@ jobs:
 
       - name: Run pytest
         run: pytest
+      - name: Run Pylint
+        run: pre-commit run pylint --all-files
